@@ -1,5 +1,3 @@
-
-
 import java.util.Scanner;
 
 public class RaceGame {
@@ -35,12 +33,7 @@ public class RaceGame {
     System.out.println("Great! Heres the info about your car: ");
     Automobile userCar = new Automobile(year, make, model, color, name, gears);
 
-    System.out.println("year: " + userCar.year);
-    System.out.println("Make: " + userCar.make);
-    System.out.println("Model: " + userCar.model);
-    System.out.println("Color: " + userCar.color);
-    System.out.println("Name: " + userCar.name);
-    System.out.println("Gears: " + userCar.gears);
+    System.out.println(userCar.toString());
 
     System.out.println("Now let's pick your track! How many corners should be on your track? (max 10): ");
     corners = in.nextInt();

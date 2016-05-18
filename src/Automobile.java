@@ -1,6 +1,3 @@
-
-//Automobile.java
-
 public class Automobile {
   public int year;
   public String make;
@@ -37,5 +34,14 @@ public class Automobile {
       currentSpeed = currentGear * 10;
     }
     distanceTraveled = distanceTraveled + (currentSpeed/60);
+  }
+  public String toString(){
+	  String details = "year: " + this.year + ";" 
+			  + "Make: " + this.make + ";" 
+			  + "Model: " + this.model + ";"
+			  + "Color: " + this.color + ";"
+			  + "Name: " + this.name + ";"
+			  + "Gears: " + this.gears + ";";
+	  return details;
   }
 }
